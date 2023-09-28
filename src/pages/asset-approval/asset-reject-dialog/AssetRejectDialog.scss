@@ -1,0 +1,28 @@
+.reject-asset-dialog {
+
+  .MuiDialogContent-root {
+
+    .text-wrapper {
+      display: flex;
+      margin-bottom: 1rem;
+
+      .display-name {
+        margin: 0 6px;
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+
+
+  }
+
+  .MuiDialogActions-root {
+    display: flex;
+    justify-content: center;
+
+    .MuiButtonBase-root {
+      width: 100px;
+      margin: 0 .5rem;
+    }
+  }
+}

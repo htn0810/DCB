@@ -1,0 +1,84 @@
+@import "../../../assets/styles/Color";
+
+.asset-dialog {
+  position: relative;
+
+  .close-btn {
+    top: 1rem;
+    right: 1.5rem;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+  }
+
+  .MuiDialogContent-root {
+
+    .img-wrapper {
+      position: relative;
+      width: 100%;
+      min-height: 260px;
+
+      .asset-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 100%;
+        width: auto;
+        height: 260px;
+      }
+
+      .img-skeleton {
+        position: absolute;
+        width: 100%;
+        height: 260px;
+      }
+    }
+
+    .MuiDivider-root {
+      margin: 1rem 0;
+    }
+
+    .title {
+      margin-bottom: .7rem;
+      font-family: "Bosch Sans Bold", serif !important;
+      font-size: 16px;
+    }
+
+    .content {
+      margin-bottom: 1rem;
+      font-family: "Bosch Sans Light", serif !important;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 26px;
+    }
+
+    .link {
+      margin-bottom: 1rem;
+      font-family: "Bosch Sans Light", serif !important;
+      font-size: 16px;
+    }
+
+    .map-row {
+      display: flex;
+      margin-bottom: 1rem;
+
+      .MuiSvgIcon-root {
+        margin: auto .5rem;
+      }
+      .name {
+        margin: auto 0;
+      }
+    }
+  }
+
+  .MuiDialogActions-root {
+    display: flex;
+    justify-content: center;
+
+    .MuiButtonBase-root {
+      width: 100px;
+      margin: 0 0.5rem 1rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "src/assets/styles/Color";
+
+.pagination-container {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .size-select {
+    width: 150px;
+  }
+
+  .MuiPaginationItem-root.Mui-selected {
+    background-color: $bosch-blue-50 !important;
+    &:hover {
+      background-color: $bosch-blue-40 !important;
+    }
+  }
+}

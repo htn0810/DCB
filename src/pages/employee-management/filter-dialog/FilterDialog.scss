@@ -1,0 +1,31 @@
+.filter-emp-dialog {
+
+  .close-btn {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .MuiDialogContent-root {
+    min-width: 500px;
+
+    .MuiGrid-root {
+      margin: unset !important;
+
+      .divider {
+        display: flex;
+
+        .MuiDivider-root {
+          margin: 0 auto;
+          border-color: black;
+        }
+      }
+
+      .MuiFormControlLabel-root {
+        margin-left: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "src/assets/styles/Color";
+
+.help-container {
+  padding: 1rem;
+
+  .toolbar {
+    margin-bottom: 1rem;
+  }
+
+  .MuiPaper-root {
+    margin-bottom: 1rem;
+  }
+
+  .MuiAccordionSummary-root {
+    background: $bosch-gray-95;
+
+    .MuiTypography-root {
+      font-family: "Bosch Sans Medium" !important;
+    }
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 1rem;
+    font-family: "Bosch Sans Regular" !important;
+  }
+}

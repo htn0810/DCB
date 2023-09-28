@@ -1,0 +1,122 @@
+@import "src/assets/styles/Color";
+
+.MuiDrawer-root {
+
+  .MuiBackdrop-root {
+    background-color: unset;
+  }
+
+  .MuiDrawer-paper {
+    color: white !important;
+    background-color: $bosch-gray-20 !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: width ease-in-out 200ms;
+
+    .MuiTypography-root {
+      font-family: "Bosch Sans Regular" !important;
+    }
+
+    .sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+
+      .MuiTypography-root {
+        margin: auto 0 auto 1rem;
+        font-weight: bold;
+      }
+
+      .close-btn {
+        margin: auto 1rem auto 0;
+        padding: 0;
+        color: white;
+      }
+
+      .open-btn {
+        margin: auto;
+        color: white;
+      }
+    }
+
+    .menu-list {
+
+      .selected-item {
+        background-color: $bosch-blue-50 !important;
+      }
+
+      .menu-item {
+        display: block;
+        transition: background-color 500ms;
+
+        &:hover {
+          background-color: $bosch-gray-30;
+        }
+
+        .MuiListItemButton-root {
+          padding: 0;
+          min-height: 48px !important;
+          color: white !important;
+
+          .MuiListItemIcon-root {
+            justify-content: center;
+            color: white;
+          }
+
+          .MuiListItemText-root {
+            margin: auto 1rem;
+          }
+        }
+      }
+    }
+
+    .sidebar-footer {
+      margin-top: auto;
+
+      .help-center {
+        border-top: 1px solid $bosch-gray-50;
+
+        ul{
+          padding: 0;
+        }
+      }
+
+      .user-info {
+        border-top: 1px solid $bosch-gray-50;
+
+        ul{
+          padding: 0;
+        }
+
+        .menu-item {
+          transition: background-color 500ms;
+
+          &:hover {
+            background-color: $bosch-gray-30;
+          }
+
+          .MuiListItemIcon-root {
+            color: white;
+          }
+        }
+      }
+
+      .copyrights {
+        display: flex;
+        margin: auto;
+        border-top: 1px solid $bosch-gray-50;
+
+        .copyright-icon {
+          color: white;
+          width: 1.5rem;
+          margin: 1rem;
+        }
+
+        .copyright {
+          margin: 1rem auto;
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}

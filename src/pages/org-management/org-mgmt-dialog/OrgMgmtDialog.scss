@@ -1,0 +1,109 @@
+@import "src/assets/styles/Color";
+@import "src/assets/responsive/Breakpoints";
+
+.org-mgmt-dialog {
+  position: relative;
+
+  .close-btn {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .MuiDialogContent-root {
+    margin: 0 auto;
+    width: 90%;
+    @include largeLaptop {
+      width: 80%;
+    }
+    @include desktop {
+      width: 70%;
+    }
+
+    .MuiTypography-h6 {
+      margin: 1rem 0;
+      font-family: "Bosch Sans Medium", serif !important;
+      font-size: 18px;
+    }
+
+    .MuiTypography-subtitle1 {
+      margin: 1rem 0 .5rem;
+      font-family: "Bosch Sans Regular", serif !important;
+      font-size: 16px;
+    }
+
+    .MuiFormControl-root {
+      margin-bottom: 1rem;
+    }
+
+    .no-data-text {
+      color: $bosch-gray-50;
+    }
+
+    .owners, .units, .asset, .employees, .search-emp {
+      display: flex;
+      justify-content: space-between;
+      &:nth-child(even) {
+        background-color: $bosch-gray-95 !important;
+      }
+
+      .left-wrapper {
+        display: flex;
+        margin: auto .5rem;
+
+        .app-icon, .person-icon {
+          color: $bosch-blue-40;
+        }
+
+        .emp-name {
+          margin: auto 0 auto 1rem;
+        }
+      }
+
+      .add-icon {
+        color: $bosch-blue-50
+      }
+    }
+
+    .review-asset-container {
+
+      .error-message {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: $bosch-red-90;
+        color: $bosch-red-40;
+        font-family: "Bosch Sans Medium", serif !important;
+        font-size: 16px;
+        font-style: italic;
+      }
+
+      .MuiTypography-h6 {
+        margin-top: 1rem;
+      }
+
+      .title {
+        font-family: "Bosch Sans Light", serif !important;
+      }
+
+      .asset-name, .unit-name, .employee-name {
+        padding: .5rem;
+        &:nth-child(even) {
+          background-color: $bosch-gray-95 !important;
+        }
+      }
+    }
+  }
+
+  .MuiDialogActions-root {
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid $bosch-gray-80;
+
+    .MuiButtonBase-root {
+      min-width: 120px;
+      margin: 0 .5rem;
+    }
+  }
+}

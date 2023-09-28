@@ -1,0 +1,20 @@
+.info-emp-dialog {
+  
+  .close-btn {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .MuiDialogContent-root {
+
+    .MuiTypography-subtitle1 {
+      font-family: "Bosch Sans Light" !important;
+    }
+    .MuiTypography-h5, .MuiTypography-h6 {
+      font-family: "Bosch Sans Medium" !important;
+    }
+  }
+}

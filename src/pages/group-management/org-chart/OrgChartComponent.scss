@@ -1,0 +1,86 @@
+@import "src/assets/styles/Color";
+
+.org-chart-container {
+  height: calc(100vh - 73px);
+  background-color: $bosch-gray-95;
+  font-family: "Bosch Office Sans", serif;
+  overflow-y: hidden;
+  margin-bottom: -5rem !important;
+
+  .arrow-icon, .person-icon {
+    width: inherit;
+    color: black;
+    align-items: center;
+    font-size: xxx-large;
+  }
+
+  .detail-icon {
+    left: 10px;
+    bottom: 4px;
+    width: 1em;
+    stroke-width: 0.8;
+    position: absolute;
+    font-size: x-large;
+    color: $bosch-yellow-90;
+  }
+
+  .detail-icon:hover {
+    color: #ff8787;
+    font-size: xx-large;
+  }
+
+  .person-icon {
+    right: 10px;
+    bottom: 4px;
+    width: 1em;
+    stroke-width: 0.8;
+    position: absolute;
+    font-size: xx-large;
+    color: $bosch-turquoise-50;
+  }
+
+  .person-icon:hover {
+    color: $bosch-purple-40;
+  }
+
+  .group-card {
+    position: relative;
+    text-align: center;
+
+    .group-name {
+      font-family: "Bosch Sans Global Black", serif;
+    }
+
+    .group-manager {
+      font-family: "Bosch Sans Bold", serif;
+    }
+
+    .group-description {
+      font-family: "Bosch Sans Light", serif;
+      margin-top: 4px;
+    }
+
+    .MuiDivider-root {
+      margin: 0.8rem;
+    }
+  }
+}
+
+.myLabelComponentInSvg {
+  height: 70px;
+  width: 180px;
+  margin: 10px;
+}
+
+.not_found_org-chart {
+  color: gray;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-avatar {
+  display: flex;
+  justify-content: center;
+}

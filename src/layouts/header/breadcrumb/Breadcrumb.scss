@@ -1,0 +1,14 @@
+.breadcrumb-wrapper {
+  margin: auto 0;
+
+  .breadcrumb{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "Bosch Sans Regular";
+
+    .breadcrumb_right-arrow {
+      padding: 0 8px;
+    }
+  }
+}

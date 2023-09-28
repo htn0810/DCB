@@ -1,0 +1,38 @@
+@import "../../../assets/styles/Color";
+
+.select-org-container {
+    margin: 1rem auto 0;
+    width: 25%;
+
+    .MuiTypography-root {
+        margin-bottom: 1rem;
+        font-family: "Bosch Sans Regular" !important;
+        color: white;
+    }
+
+    .MuiInputBase-input {
+        text-align: left;
+        padding: .5rem 1rem !important;
+        font-family: "Bosch Sans Bold" !important;
+    }
+
+    .MuiMenuItem-root {
+        font-family: "Bosch Sans Regular" !important;
+    }
+
+    .MuiButton-root {
+        width: 100%;
+        height: 100%;
+    }
+    .MuiButton-root.Mui-disabled {
+        background-color: $bosch-gray-90 !important;
+    }
+
+    .MuiCheckbox-root {
+        color: white;
+    }
+
+    .MuiFormControlLabel-label {
+        margin: auto;
+    }
+}

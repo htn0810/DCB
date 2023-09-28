@@ -1,0 +1,40 @@
+@import "src/assets/styles/Color";
+
+.sync-employee-dialog {
+  position: relative;
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .MuiDialogContent-root {
+    height: 60vh;
+
+    .new-data {
+      font-family: 'Bosch Sans Medium';
+      color: $bosch-green-50;
+    }
+
+    .update-data {
+      font-family: 'Bosch Sans Medium';
+      color: $bosch-blue-50;
+    }
+
+    .delete-data {
+      font-family: 'Bosch Sans Medium';
+      color: $bosch-red-50;
+    }
+  }
+
+  .MuiDialogActions-root {
+    display: flex;
+    justify-content: center;
+
+    .MuiButtonBase-root {
+      width: 100px;
+      margin: 0 .5rem;
+    }
+  }
+}

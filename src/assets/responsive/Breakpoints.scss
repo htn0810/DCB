@@ -1,0 +1,25 @@
+// Define breakpoint to responsive UI
+$extra-small-width: 480px;
+$small-width: 640px; 
+$medium-width: 768px; 
+$large-width: 1024px; 
+$extra-large-width: 1280px;
+$double-extra-large-width: 1536px;
+
+// Mixin for responsive UI for laptop
+@mixin laptop { @media (min-width: #{$large-width + 1}) and (max-width: #{$extra-large-width}) {     
+        @content;  
+    } 
+}
+
+// Mixin for responsive UI for performance laptop
+@mixin largeLaptop { @media (min-width: #{$extra-large-width + 1}) and (max-width: #{$double-extra-large-width}) {
+        @content;
+    }
+}
+
+// Mixin for responsive UI for desktop monitor
+@mixin desktop { @media (min-width: #{$double-extra-large-width + 1}) {
+        @content;
+    }
+}

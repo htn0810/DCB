@@ -1,0 +1,54 @@
+@import "../../assets/styles/Color";
+@import "../../assets/responsive/Breakpoints";
+
+.app-mgmt-container {
+  padding: 1rem;
+  .toolbar {
+    padding: 0.5rem 1rem 0.2rem;
+    margin-bottom: 1rem;
+    min-height: fit-content;
+    .switch-layout {
+      display: flex;
+      &-icon {
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      &-icon:hover {
+        color: $bosch-blue-40;
+      }
+      &-icon.active {
+        color: $bosch-blue-40;
+      }
+    }
+    .add-btn {
+      min-width: unset;
+      padding: 7px;
+      margin-left: 14px;
+    }
+  }
+
+  .org-text-field {
+    margin: 0.2rem;
+    width: 17%;
+
+    .MuiInputAdornment-root {
+      cursor: pointer;
+    }
+
+    .org-clear-icon {
+      margin-right: 22px;
+      padding: 2.2px;
+    }
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }   
+}

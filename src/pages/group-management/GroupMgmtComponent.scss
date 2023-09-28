@@ -1,0 +1,63 @@
+@import "src/assets/styles/Color";
+
+.group-mgmt-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .toolbar {
+    padding: 0 1rem;
+    margin-bottom: .5rem;
+
+    .group-text-field {
+      width: 180px;
+    }
+
+    .MuiButton-root {
+      margin-left: 1rem;
+    }
+  }
+
+  .group-breadcrumb {
+    margin: auto 0;
+    display: flex;
+
+    .MuiTypography-root {
+      margin: auto 4px;
+      font-weight: 700;
+    }
+
+    .MuiSvgIcon-root {
+      margin: 10px 4px;
+      font-size: 16px;
+    }
+
+    .hovered {
+      color: $bosch-blue-40;
+      &:hover {
+        cursor: pointer;
+        color: $bosch-turquoise-50;
+      }
+    }
+  }
+
+  .group-tab {
+    display: flex;
+    justify-content: flex-end;
+
+    .Mui-selected {
+      font-family: "Bosch Sans Bold", serif !important;
+    }
+
+    .MuiButtonBase-root {
+      padding: .5rem;
+      font-family: "Bosch Sans Regular", serif;
+      font-size: 0.875rem;
+    }
+  }
+
+  .no-data {
+    font-weight: 500;
+    color: $bosch-gray-50;
+  }
+}

@@ -1,0 +1,68 @@
+.dashboard-banner {
+  background-image: url(../../../../public/images/dashboard-banner-bg.jpg);
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .app-name {
+    margin: 1rem;
+    display: flex;
+    color: white;
+    font-family: "Bosch Sans Bold";
+    font-size: 17px;
+
+    .MuiSvgIcon-root {
+      width: 20px;
+      margin-right: 0.8rem;
+    }
+  }
+
+  .MuiGrid-container {
+    margin: 2rem 0;
+
+    .text-wrapper {
+      margin: auto 5vw;
+
+      .MuiTypography-root {
+        color: white;
+      }
+      .MuiTypography-h6 {
+        font-family: "Bosch Sans Medium";
+      }
+      .MuiTypography-subtitle1 {
+        margin-top: .5rem;
+        font-family: "Bosch Sans Regular";
+      }
+
+      .apps-central {
+        margin: 1rem 0 0 2rem;
+      }
+      .employees-central {
+        margin: 1rem 0 0 4rem;
+      }
+      .management-central {
+        margin: 1rem 0 0 6rem;
+      }
+    }
+
+    .org-central {
+      padding-top: 70px;
+      .org-central-h6 {
+        font-size: 21px;
+      }
+      .org-central-subtitle {
+        font-size: 16px;
+      }
+    }
+
+    .core-img {
+      margin: auto;
+      max-width: 220px;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+@import "Color";
+
+a {
+  text-decoration: unset;
+  color: $bosch-blue-50 !important;
+
+  &:hover {
+    color: $bosch-blue-40 !important;
+  }
+}
+
+// Button
+.MuiButton-root {
+  font-family: "Bosch Sans Regular", serif !important;
+  font-size: 16px !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: $bosch-blue-50 !important;
+  &:hover {
+    background-color: $bosch-blue-40 !important;
+  }
+}
+.MuiButton-containedError {
+  background-color: $bosch-red-50 !important;
+  &:hover {
+    background-color: $bosch-red-40 !important;
+  }
+}
+.MuiButton-containedInherit {
+  background-color: $bosch-gray-90 !important;
+  &:hover {
+    background-color: $bosch-gray-80 !important;
+  }
+}
+
+.MuiButton-outlinedPrimary {
+  color: $bosch-blue-50 !important;
+  border-color: $bosch-blue-50 !important;
+}
+
+.MuiIconButton-colorPrimary {
+  color: $bosch-blue-50 !important;
+}
+
+// Card
+.MuiCard-root {
+  border-radius: 0 !important;
+}
+
+// Checkbox
+.MuiCheckbox-root.Mui-checked {
+  color: $bosch-blue-50 !important;
+}
+
+// Dialog
+.MuiDialog-paper {
+  border-radius: 0 !important;
+  border-top: .375rem solid $bosch-blue-50 !important;
+}
+.MuiDialogTitle-root {
+  padding: .5rem 1.5rem !important;
+  font-family: "Bosch Sans Bold", serif !important;
+  font-size: 20px !important;
+  border-bottom: 1px solid $bosch-gray-60 !important;
+}
+.MuiDialogContent-root {
+  padding-top: 1rem !important;
+}
+
+// Input
+.Mui-focused {
+  background-color: $bosch-blue-90 !important;
+}
+
+.MuiFormControl-root {
+  font-family: "Bosch Sans Medium", serif !important;
+
+  .MuiInputLabel-root {
+    font-family: "Bosch Sans Light", serif !important;
+    color: black;
+    font-size: 14px;
+  }
+
+  .MuiInputLabel-root.Mui-focused {
+    top: 14px !important;
+    color: $bosch-blue-50 !important;
+  }
+
+  .MuiFormLabel-filled {
+    top: 14px !important;
+  }
+
+  .MuiInputBase-root {
+    padding: unset !important;
+    border-radius: unset !important;
+    background-color: $bosch-gray-90 !important;
+    border-bottom: 1px solid black !important;
+
+    &:hover {
+      background-color: $bosch-gray-80;
+    }
+  }
+
+  .MuiInputBase-input {
+    padding: 1.4rem 1rem .4rem !important;
+
+    &:focus {
+      background-color: $bosch-blue-90 !important;
+    }
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: unset !important;
+  }
+}
+
+// Step
+.MuiStepLabel-label {
+  font-family: "Bosch Sans Regular", serif !important;
+  font-size: 16px !important;
+}
+
+// Table
+.MuiTableCell-head {
+  font-family: "Bosch Sans Bold", serif !important;
+  font-size: 16px !important;
+  border-bottom: 4px solid $bosch-gray-80 !important;
+}
+
+.MuiTableCell-body {
+  font-family: "Bosch Sans Regular", serif !important;
+  font-size: 16px !important;
+}
+
+.MuiTableRow-root:nth-child(even) {
+  background-color: $bosch-gray-95 !important;
+}
+
+.MuiTableBody-root {
+  .MuiTableRow-root:last-child td, .MuiTableRow-root:last-child th {
+    border: 0 !important;
+  }
+}
+
+.MuiTablePagination-root {
+  border-top: 4px solid $bosch-gray-80 !important;
+}
+
+// Tabs
+.MuiTab-root {
+  font-family: "Bosch Sans Medium", serif !important;
+  font-size: 16px !important;
+  text-transform: unset !important;
+  color: black !important;
+}
+.MuiTab-root.Mui-selected {
+  color: $bosch-blue-40 !important;
+}
+
+// Toolbar
+.MuiToolbar-root {
+  background-color: $bosch-gray-95 !important;
+}
+
+// Tooltip
+.MuiTooltip-tooltip {
+  padding: 4px 12px !important;
+  font-family: "Bosch Sans Regular", serif !important;
+  font-size: 16px !important;
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid $bosch-gray-90 !important;
+  border-radius: unset !important;
+  box-shadow: 0 0 8px #00000040 !important;
+}
+
+.invalid-message {
+  margin-bottom: 1rem;
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+}

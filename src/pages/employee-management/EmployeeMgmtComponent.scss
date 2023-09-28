@@ -1,0 +1,138 @@
+@import "src/assets/styles/Color";
+
+.employee-mgmt-container {
+  padding: 1rem;
+
+  .name-text-field {
+    margin-right: 0.5rem;
+
+    .MuiInputAdornment-root {
+      cursor: pointer;
+    }
+  }
+
+  .group-text-field {
+    width: 200px;
+
+    .MuiCircularProgress-root {
+      margin-right: 36px;
+    }
+  }
+
+  .autocomplete {
+    margin-right: 0.5rem;
+  }
+
+  .search-btn{
+    color: inherit;
+    padding: 0px 54px;
+    width: 100px;
+    height: 64px;
+    margin-left: 8px;
+  }
+
+  .filter-btn,
+  .sort-btn {
+    cursor: pointer;
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .statistic-number {
+    margin-top: 0.5rem;
+
+    .purple {
+      background-color: $bosch-purple-40;
+    }
+
+    .blue {
+      background-color: $bosch-blue-50;
+    }
+
+    .turquoise {
+      background-color: $bosch-turquoise-50;
+    }
+
+    .green {
+      background-color: $bosch-green-50;
+    }
+
+    .statistic-card {
+      color: white;
+      text-align: center;
+
+      .MuiCardContent-root {
+        padding: 8px !important;
+
+        .title {
+          font-family: "Bosch Sans Medium";
+        }
+
+        .number {
+          font-family: "Bosch Sans Bold";
+          margin-top: 0.5rem;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .employee-table {
+    margin-top: 1rem;
+
+    .avatar {
+      margin: 0 0 0 5px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &_flex {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-infomation{
+      color: $bosch-blue-40;
+      cursor: pointer;
+    }
+  }
+}
+
+.emp-sort-menu {
+  .MuiList-root {
+    padding: 0 !important;
+
+    .MuiMenuItem-root {
+      padding: 6px !important;
+      display: flex;
+
+      .MuiTypography-root {
+        font-family: "Bosch Sans Medium" !important;
+        font-size: 14px !important;
+      }
+
+      .MuiListItemIcon-root {
+        min-width: 30px !important;
+      }
+
+      .MuiListItemText-root {
+        margin-right: 14px;
+      }
+
+      .MuiFormControlLabel-root {
+        margin-right: 8px;
+      }
+    }
+
+    .MuiDivider-root {
+      margin: 0;
+    }
+
+    .reset-btn {
+      justify-content: end;
+      font-family: "Bosch Sans Medium" !important;
+      font-size: 14px !important;
+      color: $bosch-blue-50;
+    }
+  }
+}

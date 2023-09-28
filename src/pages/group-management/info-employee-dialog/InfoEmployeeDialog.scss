@@ -1,0 +1,39 @@
+.info-emp-dialog {
+
+  .close-btn {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .upload-avatar-btn {
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+
+    .cover-img {
+      max-width: 100%;
+      height: 150px;
+      max-height: 220px;
+    }
+  }
+
+  .MuiDialogContent-root {
+
+    .MuiAvatar-root {
+      margin: 0 auto;
+      font-size: 50px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .MuiTypography-subtitle1 {
+      font-family: "Bosch Sans Light" !important;
+    }
+    .MuiTypography-h5, .MuiTypography-h6 {
+      font-family: "Bosch Sans Medium" !important;
+    }
+  }
+}

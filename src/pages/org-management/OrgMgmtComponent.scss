@@ -1,0 +1,29 @@
+@import "src/assets/styles/Color";
+
+.org-mgmt-container {
+  padding: 1rem;
+
+  .toolbar {
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    min-height: fit-content;
+
+    .add-btn {
+      min-width: unset;
+      padding: 6px;
+    }
+  }
+
+  .no-data {
+    font-weight: 500;
+    color: $bosch-gray-50;
+  }
+
+  .org_link {
+    text-align: center;
+  }
+
+  .website-icon {
+    margin: 10px 20px 0 20px;
+  }
+}

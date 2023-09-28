@@ -1,0 +1,13 @@
+@import "../../assets/styles/Color";
+
+.asset-approve-container {
+  padding: 1rem;
+
+  .asset-name {
+    color: $bosch-blue-40;
+    &:hover {
+      cursor: pointer;
+      color: $bosch-blue-50;
+    }
+  }
+}

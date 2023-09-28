@@ -1,0 +1,159 @@
+@import "../../assets/styles/Color";
+@import "../../assets/responsive/Breakpoints";
+
+.home-container {
+  margin-bottom: -5rem;
+
+  .home-banner {
+    background-image: url(../../../public/images/dashboard-banner-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: calc(100vh * 3 / 4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      height: calc(100vh * 2 / 3);
+    }
+
+    .black-background {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .info-wrapper {
+      position: absolute;
+      margin-top: 5vh;
+      width: 100%;
+      @include largeLaptop {
+        margin-top: 7vh;
+      }
+
+      @include desktop {
+        margin-top: 10vh;
+      }
+
+      .home-greeting {
+        .MuiTypography-root {
+          font-family: "Bosch Sans Medium" !important;
+          color: white;
+
+          @include largeLaptop {
+            line-height: 68px;
+          }
+
+          @include desktop {
+            line-height: 75px;
+          }
+        }
+      }
+
+      .home-contact {
+        color: white;
+        font-family: "Bosch Sans Light" !important;
+
+        @include desktop {
+          margin-top: 20px;
+        }
+
+        a {
+          margin-left: .5rem;
+          text-decoration: none;
+          color: inherit !important;
+          font-weight: 600;
+
+          &:hover {
+            color: $bosch-yellow-90 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .home-details {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    transform: translateY(-50%);
+
+    &_number {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      background: $bosch-gray-95;
+      box-shadow: 4px 8px 8px $bosch-gray-80;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: fade_in_show 0.75s;
+
+      @include largeLaptop {
+        width: 220px;
+        height: 220px;
+      }
+
+      @include desktop {
+        width: 280px;
+        height: 280px;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+        font-size: 48px;
+        font-family: sans-serif;
+
+        @include largeLaptop {
+          font-size: 64px;
+        }
+
+        @include desktop {
+          font-size: 72px;
+        }
+      }
+
+      span {
+        font-size: 24px;
+        font-weight: 700;
+
+        @include largeLaptop {
+          font-size: 32px;
+        }
+
+        @include desktop {
+          font-size: 34px;
+        }
+      }
+    }
+
+    &_number.organizations {
+      color: $bosch-green-50;
+    }
+
+    &_number.employees {
+      color: $bosch-blue-50;
+    }
+
+    &_number.assets {
+      color: $bosch-turquoise-50;
+    }
+  }
+}
+
+// Animation 
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
